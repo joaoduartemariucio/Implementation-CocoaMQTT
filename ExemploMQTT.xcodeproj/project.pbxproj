@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC3244C32374AABB002485FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3244C22374AABB002485FC /* AppDelegate.swift */; };
+		CC3244C52374AABB002485FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3244C42374AABB002485FC /* SceneDelegate.swift */; };
+		CC3244C72374AABB002485FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3244C62374AABB002485FC /* ViewController.swift */; };
+		CC3244CA2374AABB002485FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC3244C82374AABB002485FC /* Main.storyboard */; };
+		CC3244CC2374AAC0002485FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC3244CB2374AAC0002485FC /* Assets.xcassets */; };
+		CC3244CF2374AAC0002485FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC3244CD2374AAC0002485FC /* LaunchScreen.storyboard */; };
+		CC3244DA2374AAC1002485FC /* ExemploMQTTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3244D92374AAC1002485FC /* ExemploMQTTTests.swift */; };
+		CC3244E52374AAC1002485FC /* ExemploMQTTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3244E42374AAC1002485FC /* ExemploMQTTUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC3244D62374AAC1002485FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC3244B72374AABB002485FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC3244BE2374AABB002485FC;
+			remoteInfo = ExemploMQTT;
+		};
+		CC3244E12374AAC1002485FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC3244B72374AABB002485FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC3244BE2374AABB002485FC;
+			remoteInfo = ExemploMQTT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC3244BF2374AABB002485FC /* ExemploMQTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExemploMQTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC3244C22374AABB002485FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC3244C42374AABB002485FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CC3244C62374AABB002485FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC3244C92374AABB002485FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC3244CB2374AAC0002485FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC3244CE2374AAC0002485FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC3244D02374AAC0002485FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC3244D52374AAC1002485FC /* ExemploMQTTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExemploMQTTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC3244D92374AAC1002485FC /* ExemploMQTTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExemploMQTTTests.swift; sourceTree = "<group>"; };
+		CC3244DB2374AAC1002485FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC3244E02374AAC1002485FC /* ExemploMQTTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExemploMQTTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC3244E42374AAC1002485FC /* ExemploMQTTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExemploMQTTUITests.swift; sourceTree = "<group>"; };
+		CC3244E62374AAC1002485FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC3244BC2374AABB002485FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC3244D22374AAC1002485FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC3244DD2374AAC1002485FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC3244B62374AABB002485FC = {
+			isa = PBXGroup;
+			children = (
+				CC3244C12374AABB002485FC /* ExemploMQTT */,
+				CC3244D82374AAC1002485FC /* ExemploMQTTTests */,
+				CC3244E32374AAC1002485FC /* ExemploMQTTUITests */,
+				CC3244C02374AABB002485FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC3244C02374AABB002485FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC3244BF2374AABB002485FC /* ExemploMQTT.app */,
+				CC3244D52374AAC1002485FC /* ExemploMQTTTests.xctest */,
+				CC3244E02374AAC1002485FC /* ExemploMQTTUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC3244C12374AABB002485FC /* ExemploMQTT */ = {
+			isa = PBXGroup;
+			children = (
+				CC3244C22374AABB002485FC /* AppDelegate.swift */,
+				CC3244C42374AABB002485FC /* SceneDelegate.swift */,
+				CC3244C62374AABB002485FC /* ViewController.swift */,
+				CC3244C82374AABB002485FC /* Main.storyboard */,
+				CC3244CB2374AAC0002485FC /* Assets.xcassets */,
+				CC3244CD2374AAC0002485FC /* LaunchScreen.storyboard */,
+				CC3244D02374AAC0002485FC /* Info.plist */,
+			);
+			path = ExemploMQTT;
+			sourceTree = "<group>";
+		};
+		CC3244D82374AAC1002485FC /* ExemploMQTTTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC3244D92374AAC1002485FC /* ExemploMQTTTests.swift */,
+				CC3244DB2374AAC1002485FC /* Info.plist */,
+			);
+			path = ExemploMQTTTests;
+			sourceTree = "<group>";
+		};
+		CC3244E32374AAC1002485FC /* ExemploMQTTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC3244E42374AAC1002485FC /* ExemploMQTTUITests.swift */,
+				CC3244E62374AAC1002485FC /* Info.plist */,
+			);
+			path = ExemploMQTTUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC3244BE2374AABB002485FC /* ExemploMQTT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC3244E92374AAC1002485FC /* Build configuration list for PBXNativeTarget "ExemploMQTT" */;
+			buildPhases = (
+				CC3244BB2374AABB002485FC /* Sources */,
+				CC3244BC2374AABB002485FC /* Frameworks */,
+				CC3244BD2374AABB002485FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExemploMQTT;
+			productName = ExemploMQTT;
+			productReference = CC3244BF2374AABB002485FC /* ExemploMQTT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC3244D42374AAC1002485FC /* ExemploMQTTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC3244EC2374AAC1002485FC /* Build configuration list for PBXNativeTarget "ExemploMQTTTests" */;
+			buildPhases = (
+				CC3244D12374AAC1002485FC /* Sources */,
+				CC3244D22374AAC1002485FC /* Frameworks */,
+				CC3244D32374AAC1002485FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC3244D72374AAC1002485FC /* PBXTargetDependency */,
+			);
+			name = ExemploMQTTTests;
+			productName = ExemploMQTTTests;
+			productReference = CC3244D52374AAC1002485FC /* ExemploMQTTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC3244DF2374AAC1002485FC /* ExemploMQTTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC3244EF2374AAC1002485FC /* Build configuration list for PBXNativeTarget "ExemploMQTTUITests" */;
+			buildPhases = (
+				CC3244DC2374AAC1002485FC /* Sources */,
+				CC3244DD2374AAC1002485FC /* Frameworks */,
+				CC3244DE2374AAC1002485FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC3244E22374AAC1002485FC /* PBXTargetDependency */,
+			);
+			name = ExemploMQTTUITests;
+			productName = ExemploMQTTUITests;
+			productReference = CC3244E02374AAC1002485FC /* ExemploMQTTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC3244B72374AABB002485FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "João Duarte";
+				TargetAttributes = {
+					CC3244BE2374AABB002485FC = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					CC3244D42374AAC1002485FC = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = CC3244BE2374AABB002485FC;
+					};
+					CC3244DF2374AAC1002485FC = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = CC3244BE2374AABB002485FC;
+					};
+				};
+			};
+			buildConfigurationList = CC3244BA2374AABB002485FC /* Build configuration list for PBXProject "ExemploMQTT" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC3244B62374AABB002485FC;
+			productRefGroup = CC3244C02374AABB002485FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC3244BE2374AABB002485FC /* ExemploMQTT */,
+				CC3244D42374AAC1002485FC /* ExemploMQTTTests */,
+				CC3244DF2374AAC1002485FC /* ExemploMQTTUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC3244BD2374AABB002485FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC3244CF2374AAC0002485FC /* LaunchScreen.storyboard in Resources */,
+				CC3244CC2374AAC0002485FC /* Assets.xcassets in Resources */,
+				CC3244CA2374AABB002485FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC3244D32374AAC1002485FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC3244DE2374AAC1002485FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC3244BB2374AABB002485FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC3244C72374AABB002485FC /* ViewController.swift in Sources */,
+				CC3244C32374AABB002485FC /* AppDelegate.swift in Sources */,
+				CC3244C52374AABB002485FC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC3244D12374AAC1002485FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC3244DA2374AAC1002485FC /* ExemploMQTTTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC3244DC2374AAC1002485FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC3244E52374AAC1002485FC /* ExemploMQTTUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC3244D72374AAC1002485FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC3244BE2374AABB002485FC /* ExemploMQTT */;
+			targetProxy = CC3244D62374AAC1002485FC /* PBXContainerItemProxy */;
+		};
+		CC3244E22374AAC1002485FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC3244BE2374AABB002485FC /* ExemploMQTT */;
+			targetProxy = CC3244E12374AAC1002485FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC3244C82374AABB002485FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC3244C92374AABB002485FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC3244CD2374AAC0002485FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC3244CE2374AAC0002485FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC3244E72374AAC1002485FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC3244E82374AAC1002485FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC3244EA2374AAC1002485FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G625UPV6D7;
+				INFOPLIST_FILE = ExemploMQTT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.fulltime.fullarm.nativo.ExemploMQTT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC3244EB2374AAC1002485FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G625UPV6D7;
+				INFOPLIST_FILE = ExemploMQTT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.fulltime.fullarm.nativo.ExemploMQTT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CC3244ED2374AAC1002485FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G625UPV6D7;
+				INFOPLIST_FILE = ExemploMQTTTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.fulltime.fullarm.nativo.ExemploMQTTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExemploMQTT.app/ExemploMQTT";
+			};
+			name = Debug;
+		};
+		CC3244EE2374AAC1002485FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G625UPV6D7;
+				INFOPLIST_FILE = ExemploMQTTTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.fulltime.fullarm.nativo.ExemploMQTTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExemploMQTT.app/ExemploMQTT";
+			};
+			name = Release;
+		};
+		CC3244F02374AAC1002485FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G625UPV6D7;
+				INFOPLIST_FILE = ExemploMQTTUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.fulltime.fullarm.nativo.ExemploMQTTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ExemploMQTT;
+			};
+			name = Debug;
+		};
+		CC3244F12374AAC1002485FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G625UPV6D7;
+				INFOPLIST_FILE = ExemploMQTTUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.fulltime.fullarm.nativo.ExemploMQTTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ExemploMQTT;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC3244BA2374AABB002485FC /* Build configuration list for PBXProject "ExemploMQTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC3244E72374AAC1002485FC /* Debug */,
+				CC3244E82374AAC1002485FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC3244E92374AAC1002485FC /* Build configuration list for PBXNativeTarget "ExemploMQTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC3244EA2374AAC1002485FC /* Debug */,
+				CC3244EB2374AAC1002485FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC3244EC2374AAC1002485FC /* Build configuration list for PBXNativeTarget "ExemploMQTTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC3244ED2374AAC1002485FC /* Debug */,
+				CC3244EE2374AAC1002485FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC3244EF2374AAC1002485FC /* Build configuration list for PBXNativeTarget "ExemploMQTTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC3244F02374AAC1002485FC /* Debug */,
+				CC3244F12374AAC1002485FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC3244B72374AABB002485FC /* Project object */;
+}

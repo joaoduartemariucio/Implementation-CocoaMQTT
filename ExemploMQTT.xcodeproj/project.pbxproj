@@ -3,18 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BECB2268B926F7E9D88B3F5 /* Pods_ExemploMQTT_ExemploMQTTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABBEF71B1B3D368AA443C05E /* Pods_ExemploMQTT_ExemploMQTTUITests.framework */; };
+		6180AEE8CAF1F3A16129C46A /* Pods_ExemploMQTTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B4B9B4F6FB60A596C6A52D /* Pods_ExemploMQTTTests.framework */; };
+		8E8126874E423AACDA0B1C56 /* Pods_ExemploMQTT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C81EA7FC855DC9E54924526 /* Pods_ExemploMQTT.framework */; };
 		CC3244C32374AABB002485FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3244C22374AABB002485FC /* AppDelegate.swift */; };
-		CC3244C52374AABB002485FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3244C42374AABB002485FC /* SceneDelegate.swift */; };
 		CC3244C72374AABB002485FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3244C62374AABB002485FC /* ViewController.swift */; };
-		CC3244CA2374AABB002485FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC3244C82374AABB002485FC /* Main.storyboard */; };
 		CC3244CC2374AAC0002485FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC3244CB2374AAC0002485FC /* Assets.xcassets */; };
 		CC3244CF2374AAC0002485FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC3244CD2374AAC0002485FC /* LaunchScreen.storyboard */; };
 		CC3244DA2374AAC1002485FC /* ExemploMQTTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3244D92374AAC1002485FC /* ExemploMQTTTests.swift */; };
 		CC3244E52374AAC1002485FC /* ExemploMQTTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3244E42374AAC1002485FC /* ExemploMQTTUITests.swift */; };
+		CC3244F32374CC3D002485FC /* MQTTConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3244F22374CC3D002485FC /* MQTTConfig.swift */; };
+		CC3244F52374CCCE002485FC /* MQTTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3244F42374CCCE002485FC /* MQTTClient.swift */; };
+		CC3244F823759AAE002485FC /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3244F723759AAE002485FC /* Client.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +39,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CC3244BF2374AABB002485FC /* ExemploMQTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExemploMQTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BD14363B7391445D5333454 /* Pods-ExemploMQTTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExemploMQTTTests.debug.xcconfig"; path = "Target Support Files/Pods-ExemploMQTTTests/Pods-ExemploMQTTTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C81EA7FC855DC9E54924526 /* Pods_ExemploMQTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExemploMQTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F2503FC0129C4F9B9F9BD70 /* Pods-ExemploMQTT-ExemploMQTTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExemploMQTT-ExemploMQTTUITests.release.xcconfig"; path = "Target Support Files/Pods-ExemploMQTT-ExemploMQTTUITests/Pods-ExemploMQTT-ExemploMQTTUITests.release.xcconfig"; sourceTree = "<group>"; };
+		85CEE806C4E457327758B04A /* Pods-ExemploMQTT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExemploMQTT.debug.xcconfig"; path = "Target Support Files/Pods-ExemploMQTT/Pods-ExemploMQTT.debug.xcconfig"; sourceTree = "<group>"; };
+		9DB163A360BED1FAAF984937 /* Pods-ExemploMQTTTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExemploMQTTTests.release.xcconfig"; path = "Target Support Files/Pods-ExemploMQTTTests/Pods-ExemploMQTTTests.release.xcconfig"; sourceTree = "<group>"; };
+		A2B7727D1EFD9C263D85BD0E /* Pods-ExemploMQTT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExemploMQTT.release.xcconfig"; path = "Target Support Files/Pods-ExemploMQTT/Pods-ExemploMQTT.release.xcconfig"; sourceTree = "<group>"; };
+		ABBEF71B1B3D368AA443C05E /* Pods_ExemploMQTT_ExemploMQTTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExemploMQTT_ExemploMQTTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B4B9B4F6FB60A596C6A52D /* Pods_ExemploMQTTTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExemploMQTTTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3CE7565C950F581FA3D4BD2 /* Pods-ExemploMQTT-ExemploMQTTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExemploMQTT-ExemploMQTTUITests.debug.xcconfig"; path = "Target Support Files/Pods-ExemploMQTT-ExemploMQTTUITests/Pods-ExemploMQTT-ExemploMQTTUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC3244BF2374AABB002485FC /* Exemplo MQTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Exemplo MQTT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC3244C22374AABB002485FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CC3244C42374AABB002485FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CC3244C62374AABB002485FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CC3244C92374AABB002485FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC3244CB2374AAC0002485FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC3244CE2374AAC0002485FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC3244D02374AAC0002485FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +60,9 @@
 		CC3244E02374AAC1002485FC /* ExemploMQTTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExemploMQTTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC3244E42374AAC1002485FC /* ExemploMQTTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExemploMQTTUITests.swift; sourceTree = "<group>"; };
 		CC3244E62374AAC1002485FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC3244F22374CC3D002485FC /* MQTTConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTConfig.swift; sourceTree = "<group>"; };
+		CC3244F42374CCCE002485FC /* MQTTClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTClient.swift; sourceTree = "<group>"; };
+		CC3244F723759AAE002485FC /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E8126874E423AACDA0B1C56 /* Pods_ExemploMQTT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6180AEE8CAF1F3A16129C46A /* Pods_ExemploMQTTTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BECB2268B926F7E9D88B3F5 /* Pods_ExemploMQTT_ExemploMQTTUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C12214DAE726FFEEBAFB6E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85CEE806C4E457327758B04A /* Pods-ExemploMQTT.debug.xcconfig */,
+				A2B7727D1EFD9C263D85BD0E /* Pods-ExemploMQTT.release.xcconfig */,
+				C3CE7565C950F581FA3D4BD2 /* Pods-ExemploMQTT-ExemploMQTTUITests.debug.xcconfig */,
+				5F2503FC0129C4F9B9F9BD70 /* Pods-ExemploMQTT-ExemploMQTTUITests.release.xcconfig */,
+				1BD14363B7391445D5333454 /* Pods-ExemploMQTTTests.debug.xcconfig */,
+				9DB163A360BED1FAAF984937 /* Pods-ExemploMQTTTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		612EAB5D465F13D7875C2F30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C81EA7FC855DC9E54924526 /* Pods_ExemploMQTT.framework */,
+				ABBEF71B1B3D368AA443C05E /* Pods_ExemploMQTT_ExemploMQTTUITests.framework */,
+				C3B4B9B4F6FB60A596C6A52D /* Pods_ExemploMQTTTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CC3244B62374AABB002485FC = {
 			isa = PBXGroup;
 			children = (
@@ -83,13 +123,15 @@
 				CC3244D82374AAC1002485FC /* ExemploMQTTTests */,
 				CC3244E32374AAC1002485FC /* ExemploMQTTUITests */,
 				CC3244C02374AABB002485FC /* Products */,
+				1C12214DAE726FFEEBAFB6E4 /* Pods */,
+				612EAB5D465F13D7875C2F30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		CC3244C02374AABB002485FC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CC3244BF2374AABB002485FC /* ExemploMQTT.app */,
+				CC3244BF2374AABB002485FC /* Exemplo MQTT.app */,
 				CC3244D52374AAC1002485FC /* ExemploMQTTTests.xctest */,
 				CC3244E02374AAC1002485FC /* ExemploMQTTUITests.xctest */,
 			);
@@ -99,10 +141,9 @@
 		CC3244C12374AABB002485FC /* ExemploMQTT */ = {
 			isa = PBXGroup;
 			children = (
+				CC3244F62374CE56002485FC /* MQTT */,
 				CC3244C22374AABB002485FC /* AppDelegate.swift */,
-				CC3244C42374AABB002485FC /* SceneDelegate.swift */,
 				CC3244C62374AABB002485FC /* ViewController.swift */,
-				CC3244C82374AABB002485FC /* Main.storyboard */,
 				CC3244CB2374AAC0002485FC /* Assets.xcassets */,
 				CC3244CD2374AAC0002485FC /* LaunchScreen.storyboard */,
 				CC3244D02374AAC0002485FC /* Info.plist */,
@@ -128,6 +169,16 @@
 			path = ExemploMQTTUITests;
 			sourceTree = "<group>";
 		};
+		CC3244F62374CE56002485FC /* MQTT */ = {
+			isa = PBXGroup;
+			children = (
+				CC3244F42374CCCE002485FC /* MQTTClient.swift */,
+				CC3244F22374CC3D002485FC /* MQTTConfig.swift */,
+				CC3244F723759AAE002485FC /* Client.swift */,
+			);
+			path = MQTT;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC3244E92374AAC1002485FC /* Build configuration list for PBXNativeTarget "ExemploMQTT" */;
 			buildPhases = (
+				98207125A638597020659C34 /* [CP] Check Pods Manifest.lock */,
 				CC3244BB2374AABB002485FC /* Sources */,
 				CC3244BC2374AABB002485FC /* Frameworks */,
 				CC3244BD2374AABB002485FC /* Resources */,
+				F64C0847AF0C9444D33E4D35 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,13 +198,14 @@
 			);
 			name = ExemploMQTT;
 			productName = ExemploMQTT;
-			productReference = CC3244BF2374AABB002485FC /* ExemploMQTT.app */;
+			productReference = CC3244BF2374AABB002485FC /* Exemplo MQTT.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CC3244D42374AAC1002485FC /* ExemploMQTTTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC3244EC2374AAC1002485FC /* Build configuration list for PBXNativeTarget "ExemploMQTTTests" */;
 			buildPhases = (
+				A9170BE448C212364F4217D8 /* [CP] Check Pods Manifest.lock */,
 				CC3244D12374AAC1002485FC /* Sources */,
 				CC3244D22374AAC1002485FC /* Frameworks */,
 				CC3244D32374AAC1002485FC /* Resources */,
@@ -170,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC3244EF2374AAC1002485FC /* Build configuration list for PBXNativeTarget "ExemploMQTTUITests" */;
 			buildPhases = (
+				286301F570D3890D0204DD0F /* [CP] Check Pods Manifest.lock */,
 				CC3244DC2374AAC1002485FC /* Sources */,
 				CC3244DD2374AAC1002485FC /* Frameworks */,
 				CC3244DE2374AAC1002485FC /* Resources */,
+				FC5112ABF7170487C7EE1308 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,7 +290,6 @@
 			files = (
 				CC3244CF2374AAC0002485FC /* LaunchScreen.storyboard in Resources */,
 				CC3244CC2374AAC0002485FC /* Assets.xcassets in Resources */,
-				CC3244CA2374AABB002485FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +309,119 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		286301F570D3890D0204DD0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExemploMQTT-ExemploMQTTUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98207125A638597020659C34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExemploMQTT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9170BE448C212364F4217D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExemploMQTTTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F64C0847AF0C9444D33E4D35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExemploMQTT/Pods-ExemploMQTT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExemploMQTT/Pods-ExemploMQTT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExemploMQTT/Pods-ExemploMQTT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC5112ABF7170487C7EE1308 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExemploMQTT-ExemploMQTTUITests/Pods-ExemploMQTT-ExemploMQTTUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExemploMQTT-ExemploMQTTUITests/Pods-ExemploMQTT-ExemploMQTTUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExemploMQTT-ExemploMQTTUITests/Pods-ExemploMQTT-ExemploMQTTUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CC3244BB2374AABB002485FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC3244F32374CC3D002485FC /* MQTTConfig.swift in Sources */,
+				CC3244F52374CCCE002485FC /* MQTTClient.swift in Sources */,
 				CC3244C72374AABB002485FC /* ViewController.swift in Sources */,
+				CC3244F823759AAE002485FC /* Client.swift in Sources */,
 				CC3244C32374AABB002485FC /* AppDelegate.swift in Sources */,
-				CC3244C52374AABB002485FC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +457,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CC3244C82374AABB002485FC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CC3244C92374AABB002485FC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CC3244CD2374AAC0002485FC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,17 +584,20 @@
 		};
 		CC3244EA2374AAC1002485FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85CEE806C4E457327758B04A /* Pods-ExemploMQTT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G625UPV6D7;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = ExemploMQTT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.fulltime.fullarm.nativo.ExemploMQTT;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.fulltime.fullarm.nativo.exemplo.mqtt;
+				PRODUCT_NAME = "Exemplo MQTT";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,17 +605,20 @@
 		};
 		CC3244EB2374AAC1002485FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2B7727D1EFD9C263D85BD0E /* Pods-ExemploMQTT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G625UPV6D7;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = ExemploMQTT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.fulltime.fullarm.nativo.ExemploMQTT;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.fulltime.fullarm.nativo.exemplo.mqtt;
+				PRODUCT_NAME = "Exemplo MQTT";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -468,6 +626,7 @@
 		};
 		CC3244ED2374AAC1002485FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BD14363B7391445D5333454 /* Pods-ExemploMQTTTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +649,7 @@
 		};
 		CC3244EE2374AAC1002485FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DB163A360BED1FAAF984937 /* Pods-ExemploMQTTTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +672,7 @@
 		};
 		CC3244F02374AAC1002485FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3CE7565C950F581FA3D4BD2 /* Pods-ExemploMQTT-ExemploMQTTUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +693,7 @@
 		};
 		CC3244F12374AAC1002485FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F2503FC0129C4F9B9F9BD70 /* Pods-ExemploMQTT-ExemploMQTTUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
